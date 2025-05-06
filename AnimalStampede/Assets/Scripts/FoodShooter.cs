@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FoodShooter : MonoBehaviour
 {
-    public float speed = 18.0f;
+    public float speed = 41.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
