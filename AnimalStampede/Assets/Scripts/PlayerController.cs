@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
     public float HorizontalInput;
     public float speed = 10.0f;
     public float zRange = 23.45f;
-// Start is called once before the first execution of Update after the MonoBehaviour is created
-void Start()
+    public GameObject flyingPrefab;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
         
     }
@@ -27,5 +28,11 @@ void Start()
         }
         HorizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * HorizontalInput * Time.deltaTime * speed);
+        // Fires food with End
+        if (Input.GetKeyDown(KeyCode.End));
+        {
+            // Food flies foward from the player's position
+            Instantiate(flyingPrefab, transform.position, flyingPrefab.transform.rotation);
+        }
     }
 }
