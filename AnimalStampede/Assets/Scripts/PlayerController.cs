@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         HorizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * HorizontalInput * Time.deltaTime * speed);
         // Fires food with End
-        if (Input.GetKeyDown(KeyCode.End));
+        if (Input.GetKeyDown(KeyCode.End))
         {
             // Food flies foward from the player's position
             Instantiate(flyingPrefab, transform.position, flyingPrefab.transform.rotation);
