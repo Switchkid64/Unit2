@@ -314,65 +314,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 735650807}
   m_SourcePrefab: {fileID: 100100000, guid: 72d1e1ec46e639c47a81658b0d9e230e, type: 3}
---- !u!1 &280016239 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 160006, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-  m_PrefabInstance: {fileID: 2047603296}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &280016243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280016239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 18
---- !u!54 &280016247
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280016239}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &280016248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280016239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4854f1dbce32b54ea0df2499a5598b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UnloadValue: 41
-  UnloadValueBottom: -29
 --- !u!1 &325807508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 140746, guid: 02eca77e7e6a2ec41ba4c68f20e26098, type: 3}
@@ -392,6 +333,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefabs: []
   animalIndex: 0
+  spawnpos: {x: 0, y: 0, z: 0}
+  spawnRangeX: 0
+  SpawnPosZ: 0
 --- !u!114 &325807512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 41
+  speed: 30
 --- !u!54 &325807513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -427,7 +371,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -800,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 41
+  speed: 30
 --- !u!114 &735650805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,6 +759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefabs: []
   animalIndex: 0
+  spawnpos: {x: 0, y: 0, z: 0}
+  spawnRangeX: 0
+  SpawnPosZ: 0
 --- !u!54 &735650806
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -837,7 +784,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -957,7 +904,7 @@ MonoBehaviour:
   HorizontalInput: 0
   speed: 10
   zRange: 23.45
-  flyingPrefab: {fileID: 280016239}
+  flyingPrefab: {fileID: 0}
 --- !u!54 &781864746
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -980,7 +927,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1004,6 +951,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefabs: []
   animalIndex: 0
+  spawnpos: {x: 0, y: 0, z: 0}
+  spawnRangeX: 0
+  SpawnPosZ: 0
 --- !u!54 &789458709
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1026,7 +976,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1043,7 +993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 41
+  speed: 30
 --- !u!114 &789458711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1193,63 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 325807514}
   m_SourcePrefab: {fileID: 100100000, guid: 02eca77e7e6a2ec41ba4c68f20e26098, type: 3}
+--- !u!1001 &1294135925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1332472327842052928, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_Name
+      value: Food_Fish_Cooked Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332472327842337344, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7cc4f74142a8b3f41836f64502e55215, type: 3}
 --- !u!1001 &1484891246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,7 +1507,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1519,6 +1526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefabs: []
   animalIndex: 0
+  spawnpos: {x: 0, y: 0, z: 0}
+  spawnRangeX: 0
+  SpawnPosZ: 0
 --- !u!114 &1888935739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1531,7 +1541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 41
+  speed: 25
 --- !u!114 &1888935740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,84 +1556,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnloadValue: 41
   UnloadValueBottom: -29
---- !u!1001 &2047603296
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 160006, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_Name
-      value: Food_Fish_Cooked
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 448518, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 160006, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 280016243}
-    - targetCorrespondingSourceObject: {fileID: 160006, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 280016247}
-    - targetCorrespondingSourceObject: {fileID: 160006, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 280016248}
-  m_SourcePrefab: {fileID: 100100000, guid: 245ebd2bf811d4f45a1d5dcd8c327131, type: 3}
 --- !u!1 &2084242994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 142896, guid: e2b54f18a442ae84cb37b05e649edfc0, type: 3}
@@ -1641,7 +1573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 41
+  speed: 30
 --- !u!114 &2084242998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1656,6 +1588,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefabs: []
   animalIndex: 0
+  spawnpos: {x: 0, y: 0, z: 0}
+  spawnRangeX: 0
+  SpawnPosZ: 0
 --- !u!54 &2084242999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1678,7 +1613,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1704,9 +1639,9 @@ SceneRoots:
   - {fileID: 534669905}
   - {fileID: 992285706}
   - {fileID: 1484891246}
-  - {fileID: 2047603296}
   - {fileID: 881343310}
   - {fileID: 751093502}
   - {fileID: 1508099271}
   - {fileID: 201608775}
   - {fileID: 1227732340}
+  - {fileID: 1294135925}
