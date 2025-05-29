@@ -7,8 +7,8 @@ public class EnemySpawner : MonoBehaviour
     public GameObject[] animalPrefabs;
     public int animalIndex;
     public Vector3 spawnpos;
-    private float spawnRangeX;
-    private float SpawnPosZ;
+    public float spawnRangeX = 20f;
+    public float SpawnPosZ;
     public float betweenSpawnTime;
     public float spawnStartDelayTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,9 +26,9 @@ public class EnemySpawner : MonoBehaviour
     }
     //random animals spawn on their own
     void SpawnRandomAnimal()  {
-        Vector3 spawnpos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), SpawnPosZ, 7);
+        Vector3 spawnpos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), SpawnPosZ, 40);
         int animalIndex = Random.Range(0, animalPrefabs.Length);
 
-        Instantiate(animalPrefabs[animalIndex], new Vector3(0, 0, 40), animalPrefabs[animalIndex].transform.rotation);
+        Instantiate(animalPrefabs[animalIndex], spawnpos, animalPrefabs[animalIndex].transform.rotation);
     }
 }

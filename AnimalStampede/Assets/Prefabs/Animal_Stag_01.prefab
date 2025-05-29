@@ -186,7 +186,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4232499240106500371}
   - component: {fileID: 7667833298883758389}
-  - component: {fileID: 3773293286780756449}
+  - component: {fileID: -2345686838138135008}
+  - component: {fileID: 1091314703839118697}
+  - component: {fileID: -1075497872626647062}
   m_Layer: 0
   m_Name: Animal_Stag_01
   m_TagString: Untagged
@@ -241,7 +243,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3773293286780756449
+--- !u!65 &-2345686838138135008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425365105918378744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15860155, y: 0.48284817, z: 0.41307312}
+  m_Center: {x: -0.0020524156, y: 0.22984588, z: 0.051304907}
+--- !u!114 &1091314703839118697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,7 +276,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06caf4d4a4f50794ca0a3be7cf14f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 41
+--- !u!114 &-1075497872626647062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425365105918378744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4854f1dbce32b54ea0df2499a5598b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnloadValue: 41
+  UnloadValueBottom: -29
 --- !u!1 &1349135425058897334
 GameObject:
   m_ObjectHideFlags: 0

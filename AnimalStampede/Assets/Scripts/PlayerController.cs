@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.End))
         {
             // Food flies foward from the player's position
-            Instantiate(flyingPrefab, transform.position, flyingPrefab.transform.rotation);
+            Instantiate(flyingPrefab, transform.position + Vector3.forward * 2f, flyingPrefab.transform.rotation);
         }
     }
 }
